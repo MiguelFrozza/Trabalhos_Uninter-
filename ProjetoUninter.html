@@ -1,0 +1,161 @@
+<DOCTYYPE htlm>
+<html lang=""en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="vieport" content="width=device-width, initial-scale=1.0">
+    <title>Biografia</title>
+</head>
+<body>
+    <style>
+        <body> { 
+            front-family: Arial,sans-seriy;
+            margin:0;
+            padding: 0;
+        }
+        header { 
+            text-align: center;
+            background-color: #f1f1f1;
+            padding: 20px;
+        }
+        .tags {
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        .tab {
+            float: left;
+        }
+    .tab button {
+        background-color: initial;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 10px 15px;
+        transition: 0.3s;
+    }
+    .tab button:hover {
+        display: none;
+        clear: both;
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <h1> Miguel de Oliveira Frozza </h1>
+    <img src="https://visitbrasil.com/wp-content/uploads/2024/07/Skate-no-Brasil-Explorando-o-Pais-Sobre-Rodas1.jpg"
+    width="620" height="405 alt="Miguel de Oliveira Frozza">
+    ,<p>Sou estudante do curso Tecnologia em Análise e Desenvolvimento de Sistemas, do Centro Univertário Internacional-UNINTER</p>
+    </header>
+
+    <div class="tabs">
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'home')">Página Inicial</button>
+        </div>
+        <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'education')">Formação acadêmica</button>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'personalLife')">Vida Pessoal</button>
+        </div>
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Formulario')">Formulario</button>
+            </div>
+        
+    </div>
+
+    <div id="home" class="tabcontent" style="display:block">
+        <h2><center>Página Inicial</center></h2>
+        <p>
+            <center>
+            Usei a imagem de um Skatetista, porque gosto de praticar esse esporte e já ando de Skate a muitos anos.<br>
+            A imagem foi retirada a um site da interner, especilaizado turismo nacional. <br>
+            A reportagem fala sobre do esporte e cultura do Skate, na cidade de Santos-SP. <br>
+            Cidade origem da banda Charlie Brown Jr, altamente identificada cultura do Skate. <br>
+         </center>
+        </p>
+        <center>
+        <img src="https://www.skataholic.com.br/wp-content/uploads/2018/12/pista-de-skate-orla-do-Guai%CC%81ba-.jpg" width="520" height="405"
+        alt="Home Image"
+        </center>
+    </div>
+
+    <div id="education" class="tabcontent">
+        <h2><center> Formação Acadêmica de Miguel de Oliveira Frozza</center></h2>
+        <p>
+            <center>
+                Graduação em Bacharelado em Ciências Sociais pela Universidade Federal do Rio Grande do Sul (2013).<br>
+                Graduação em Licenciatura em História e Licenciatura em Geografia pela Centro Universitário Internacional-UNINTER.<br>
+                Especialização em Master em Gestão Estratégica e UX Design pela Escola Superior de Propaganda e Marketing (ESPM).<br> 
+                Mestrado em Educação pela Universidade Federal do Rio Grande do Sul (UFRGS).<br>
+                Cursando o Tecnologia em Análise e Desenvolvimento de Sistemas pela Centro Universitário Internacional-UNINTER.<br>
+                Tenho experiência profissional com aréa educação e tecnologia, onde já trabalhei como professor de ciências humanas e tutor de cursos EAD.<br>
+            </center>
+        </p>
+        <center>
+            <img src="https://revista-cdn.querobolsa.com.br/post_images/44463/b1250c626075e5da5ab6fef7cfbf8637e0c6d32a.jpg?1682696027" width="520" height="205"
+            alt="Education Image">
+        </center>
+    </div>
+
+    <div id="formulario" class="tabcontent" style="display:block">
+        <h1>Formulário Simples</h1>
+        <form action="" method="">
+            <table>
+                <tr>
+                    <tr>
+                        <label for="nome"=>Nome:</label>
+                      </tr>
+                      <td>
+                        <input type="text" name="nome" id="nome">
+                      </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="msg">Digite sua mensagem</label>
+                    </th>
+                    <td>
+                        <textarea name="msg" rows="5" cols="40">Digite sua mensagem</textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+
+                    </td>
+
+                    <td>
+                        <button>enviar</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+    <div id="personalLife" class="tabcontent">
+        <h2><center>Lado B do Miguel de Oliveira Frozza</center></h2>
+        <p>
+            <center>
+                Gosto de praticar esportes, estudar e ler livros temas sobre tecnologia,história e literatura. <br>
+                Gosto de frequentar a academia e andar de skate. Também gosto de sair com amigos, ouvir música e ver filmes. <br>
+                Gosto de assistir jogos de futebol e sou torcedor do Internacional de Porto Alegre. <br>
+                </center>
+        </p>
+    <center>
+        <img src="https://media.internacional.groundsportech.com/wp-content/uploads/2020/03/13123922/SCINTERNACIONAL.jpg" alt="Personal Life Image"
+        width="520" height="405">
+    </center>
+    </div>
+
+    <script>
+        function openTab(evt,tabName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsClassName("tabcontent");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].classList.remove("active");
+            }
+            document.getElementById(tabName).stytle.display = "block";
+            evt.currentTarget.classList.add("active");
+        }
+
+    </script>
+    </body>
+    </html>
